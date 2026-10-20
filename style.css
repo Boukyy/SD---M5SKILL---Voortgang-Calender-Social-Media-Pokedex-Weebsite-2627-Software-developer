@@ -1,106 +1,83 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
+.calender {
+width: 100%;
+max-width: 1000px;
+margin: 30px auto;
+padding: 20px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    font-size: 1.4rem;
-    background-color: #fafafa;
-    color: #262626;
+.header {
+display: grid;
+grid-template-columns: 1fr 300px 1fr;
+align-items: center;
+gap: 10px;
+margin-bottom: 20px;
 }
 
-header {
-    background-color: white;
-    border-bottom: 1px solid #ddd;
-    padding: 18px;
-    text-align: center;
+.header h2 {
+text-align: center;
 }
 
-header h1 {
-    font-family: cursive;
-    font-size: 3rem;
+.navbutton {
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+background-color: #d946ef;
+color: white;
+cursor: pointer;
+font-size: 16px;
 }
 
-main {
-    width: 470px;
-    max-width: 95%;
-    margin: 25px auto;
+.navbutton:hover {
+background-color: #de0202;
 }
 
-.post {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 25px;
+.weekdays {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+list-style: none;
+text-align: center;
+font-weight: bold;
+margin-bottom: 5px;
 }
 
-.post-header {
-    display: flex;
-    align-items: center;
-    padding: 12px;
-    gap: 10px;
+.weekday {
+padding: 10px;
 }
 
-.profile {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    object-fit: cover;
+.days {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+list-style: none;
 }
 
-.username {
-    font-weight: bold;
-    flex: 1;
+
+.day {
+aspect-ratio: 4 / 3;
+margin: 2px;
+padding: 10px;
+
+border-radius: 5px;
+
+background: linear-gradient(
+    135deg,
+    #fcf8fb 0%,
+    #ffe0fc 100%
+);
+
+border: 1px solid #f0b5e9;
+
+
 }
 
-.dots {
-    font-size: 2.4rem;
-}
-
-.post-img {
-    width: 100%;
-    display: block;
-}
-
-.buttons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 12px;
-    font-size: 2.5rem;
-}
-
-.buttons span {
-    cursor: pointer;
-}
-
-.bookmark {
-    margin-left: auto;
-}
-
-.likes {
-    font-weight: bold;
-    padding: 0 12px;
-}
-
-.caption {
-    padding: 10px 12px;
-    line-height: 1.5;
-}
-
-.comments {
-    color: #888;
-    padding: 0 12px 10px;
-}
-
-.date {
-    color: #999;
-    font-size: 1rem;
-    padding: 0 12px 12px;
+.empty {
+aspect-ratio: 4 / 3;
+margin: 2px;
+border-radius: 5px;
+background-color: #f1f1f1;
 }
