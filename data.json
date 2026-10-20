@@ -1,0 +1,21 @@
+
+[
+    {
+        "user": "adam.dev",
+        "profile": "https://i.pravatar.cc/100?img=12",
+        "likes": 120,
+        "comments": 15,
+        "text": "Vandaag weer bezig met programmeren! 💻",
+        "imgUrl": "https://picsum.photos/id/0/600/500",
+        "date": "2 UUR GELEDEN"
+    },
+    {
+        "user": "gamingboy",
+        "profile": "https://i.pravatar.cc/100?img=11",
+        "likes": 85,
+        "comments": 10,
+        "text": "Lekker gamen met vrienden 🎮",
+        "imgUrl": "https://picsum.photos/id/96/600/500",
+        "date": "3 UUR GELEDEN"
+    }
+]
